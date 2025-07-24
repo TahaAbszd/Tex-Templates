@@ -1,0 +1,91 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{lipsum}
+\usepackage{tocloft}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{setspace}
+\usepackage{xepersian}
+
+
+\geometry{top=3cm, bottom=3cm, left=3.5cm, right=3.5cm}
+\settextfont{Vazir Light}
+\definecolor{darkblue}{RGB}{0, 51, 102}
+
+\setstretch{1.5}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{1.5pt}
+\renewcommand{\headrule}{\color{darkblue}\hrule}
+\fancyhead[R]{\color{darkblue}\textbf{ریاضیات گسسته}}
+\fancyhead[L]{\color{darkblue}\textbf{سیاست ها}}
+
+\fancyfoot[C]{\color{gray}\thepage}
+
+\thispagestyle{empty}
+
+\titleformat{\section}{\Large\bfseries\color{darkblue}}{\thesection}{1em}{}
+\titlespacing{\section}{0pt}{12pt}{6pt}
+
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsecfont}{\color{darkblue}}
+\renewcommand{\cftsecpagefont}{\color{darkblue}}
+
+% ------------------------------
+\begin{document}
+	
+	\begin{center}
+		\vspace*{4cm}
+		\includegraphics[width=0.25\textwidth]{logo.png} \\[1cm]
+		\textcolor{darkblue}{\large \textbf{سیاست های درس}} \\
+		\textcolor{darkblue}{ریاضیات گسسته} \\
+		\textcolor{darkblue}{پاییز ۱۴۰۴}
+
+
+
+	\end{center}
+	
+	\clearpage
+	\thispagestyle{empty}
+	\begin{center}
+		\vspace*{1.5cm}
+		{\LARGE \textbf{فهرست مطالب}} \\[0.5cm]
+	\end{center}
+	\vspace{0.5cm}
+	\tableofcontents
+	
+	\clearpage
+	\section{مقدمه}
+	{\color{black}
+		این بخش به بررسی کلی مفاهیم اولیه ریاضیات گسسته
+		\lipsum[1][1-3]
+	}
+	
+	\section{اهداف درس}
+	{\color{black}
+		هدف این درس، آموزش مفاهیم پایه‌ای و پیشرفته در ریاضیات گسسته ‌است.
+		\lipsum[2][1-3]
+	}
+	
+	\section{قوانین و ضوابط}
+	{\color{black}
+		شامل قوانین مربوط به حضور، امتحانات، پروژه‌ها و نحوه ارزیابی.
+		\lipsum[3][1-3]
+	}
+	
+	\section{برنامه درسی}
+	{\color{black}
+		برنامه هفتگی و سرفصل‌های درسی به تفکیک جلسات در این بخش ارائه می‌شود.
+		\lipsum[4][1-3]
+	}
+	
+	\section{منابع}
+	{\color{black}
+		کتاب‌ها و مقالات پیشنهادی جهت مطالعه بیشتر.
+		\lipsum[5][1-3]
+	}
+	
+\end{document}
